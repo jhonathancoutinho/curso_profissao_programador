@@ -1,2 +1,2 @@
 # curso_profissao_programador
- Curso de programação do professor Paulo Borge
+ Curso de programação do professor Paulo Borges
