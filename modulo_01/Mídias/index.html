@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman</title>
+</head>
+<body>
+    <img src="../Mídias/midia/batman22.webp" style="display: block;" />
+
+    <video id="player" controls style="width: 50%; border-radius: 10px" />
+        <source src="./midia/batman.mp4" type="video/mp4" />
+        Seu navegador não possui suporte para vídeos
+    </video>
+
+    <audio controls>
+        <source src="./midia/batman.mp4" type="audio/mpeg">
+        Seu navegador não possui suporte para áudio.
+    </audio>
+    <button onclick="document.getElementById('player').play()">PLAY</button>
+    <button onclick="document.getElementById('player').pause()">PAUSE</button>
+
+    <iframe src="./contato.html">
+
+    </iframe>
+</body>
+</html>

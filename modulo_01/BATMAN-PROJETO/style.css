@@ -1,0 +1,355 @@
+/* Cabeçalho */
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap') ;
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+/* banner de publicidade */
+#banner {
+    background-image: url('https://media3.giphy.com/media/GTabKEhWhTaX4r5un6/giphy.gif?cid=6c09b952bf95adadb816170812778ad83bb371c0989f62e3&rid=giphy.gif&ct=g');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+/* Trailer e sinopse */
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 10px;
+
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* Card com os atores principais*/
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121730/batman-2022-tudo-o-que-precisa-saber-antes-de-ver-o-filme.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://pbs.twimg.com/media/FMO83fmWYAMYttY?format=jpg&name=900x900');
+}
+
+.banner-3 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/2/28/Jim_Gordon_Total_Film_still.jpg/revision/latest?cb=20220216015018');
+}
+
+/* Rodapé */
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Resposividade */
+@media(max-width:786px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+}
+
+/* CSS pagína Contato*/
+
+#banner-contato {
+    background-image: url('https://static.wixstatic.com/media/b23fa0_b230772d4947489392839e8c3fbb38cd~mv2.gif');
+    background-position: 50% 50%;
+    background-size: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+}
+
+
+#titulo-contato {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 25%;
+    align-items: center;
+    display: flex;
+}    
+
+#subtitulo-contato {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 25%;
+    align-items: center;
+    display: flex;
+}
+
+
+fieldset {
+    border: 0px solid #070303;
+}
+
+input, select, textarea {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contato-for {
+    border: 2px solid #cf9d52; width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 25%;
+    
+}
+.campo-contato {
+    margin-bottom: 1em;
+}
+
+.campo-contato label {
+    margin-bottom: 0.2em;
+    color: #fff;
+    display: block;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 10px;
+    
+}
+
+
+.campo-contato input[type="text"], .campo-contato input[type="email"], .campo-contato select. .campo-contato textarea {
+    padding: 0.2em;
+    border: 1px solid #fff;
+    display: block;
+}
+
+.campo-contato select option{
+    padding-right: 1em;
+}
+
+.campo-contato input:focus, .campo-contato select:focus, .campo-contato textarea:focus {
+    background: #413f3f28;
+}
+
+.button-contato {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    
+
+}
+
+.button-contato:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#mensagem-contato input {
+    height: 200em;
+}
+

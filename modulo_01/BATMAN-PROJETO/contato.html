@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body >
+    <header>
+        <img id="logo" src="./OIP.jpg">
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./elenco.html">
+                    <li>Elenco</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+        <div id="banner-contato"></div>
+        <div>
+            <h1 id="titulo-contato">Fale Conosco</h1>
+            <p id="subtitulo-contato">Preencha os campos abaixo:</p>
+            <br>
+        </div>
+        
+        <form class="contato-for">
+
+            <fieldset class="grupo-contato">
+                <div class="campo-contato">
+                    <label for="name">Nome:</label>
+                    <input type="text" style="height: 25px; width: 600px;" name="nome"; id="nome-contato" required>
+                </div>
+
+                <div class="campo-contato">
+                   <label for="sobrenome">Sobrenome:</label>
+                   <input type="text" style="height: 25px; width: 600px;" name="sobrenome" id="sobrenome-contato" required> 
+                </div>
+
+            <div class="campo-contato">
+                <label for="E-mail">E-mail:</label>
+                <input type="email" style="height: 25px; width: 600px;" name="E-mail" id="email-contato" required>
+            </div>
+
+            <div class="campo-contato">
+                <label>Descreva sua mensagem:</label>
+                <textarea row="8" style="height: 200px; width: 600px;" id="mensagem-contato" name="mensagem"></textarea>
+            </div>
+
+        </fieldset>
+
+            <button type="Submit" class="button-contato">Enviar</button>
+
+        </form>
+
+        <footer>
+            <img style="object-fit: contain;" id="logo" src="./OIP.jpg">
+            <span>Todos direitos reservados ©</span>
+            <span>Desenvolvido por: Jhonathan Coutinho</span>
+    
+            <nav class="footer-navigation">
+                <ul class="footer-list">
+                    <a href="./home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+    
+        </footer> 
+</body>
+</html>

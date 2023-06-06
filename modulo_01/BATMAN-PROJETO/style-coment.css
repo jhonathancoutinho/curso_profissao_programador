@@ -1,0 +1,190 @@
+/*Cabeçalho */
+
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap') ;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho{
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Corpo da pagina depoimentos */
+
+
+
+.chamadatitu {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+   
+    background: rgba(243, 240, 240, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(243, 240, 240, 0.05);
+    }
+
+.subtitulo {
+    font-size: 25px;
+    color: rgb(27, 27, 27);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+   
+   
+    background: rgba(236, 178, 14, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(236, 178, 14, 0.98);
+    height: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.grid-1-4{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.secao-depoimentos{
+    background: url(../BATMAN-PROJETO/criticos/banner-coment.jpg) no-repeat center center;
+    background-size: cover;
+    height: 800px;  
+
+}
+
+.secao-depoimentos li{
+    background: rgba(236, 178, 14, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(236, 178, 14, 0.98);
+    height: 500px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+
+.depoi{
+    border-radius: 500px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 120px;
+    height: 120px;
+    -o-object-fit: cover;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+    
+}
+
+/* Fim da seção depoimentos */
+
+/* rodapé e responsividade */
+
+.rodapecoment{
+    background-color: black;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width:786px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+   .secao-depoimentos{
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+   }
+.grid-1-4{
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+}
+
+}
